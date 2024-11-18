@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ul {
@@ -22,6 +23,7 @@ ul {
     font-size: 2rem;
     justify-content: left;
     padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
     align-self: center;
     gap: 10px;
@@ -30,6 +32,11 @@ ul {
 .title-icon {
     width: 4rem;
     color: white;
+}
+
+.icon {
+    color: gray;
+    width: 2rem;
 }
 
 .container {
@@ -41,6 +48,42 @@ ul {
 
 .header {
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 3rem;
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-auto-flow: column;
+    justify-content: left;
+    gap: 8px;
+}
+
+.search-bar {
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    border: none;
+    justify-self: stretch;
+    margin-right: 20%;
+    padding-left: 10px;
+}
+
+.profile {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .sidebar {
@@ -63,10 +106,14 @@ ul {
 
 
 .content {
-    background-color: grey;
+    background-color: #e2e8f0;
 }
 
 .first-menu, .second-menu {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+img {
+    border-radius: 50%;
 }
